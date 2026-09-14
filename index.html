@@ -7,17 +7,56 @@
   <title>The BS Sisters — Salon de Coiffure &amp; Beauté, Sidi Bel Abbès</title>
   <meta name="description"
     content="The BS Sisters — salon à Sidi Bel Abbès. Ongles, coiffure, coloration, soins. Réservez sur WhatsApp.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="images/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Social share preview (WhatsApp, Instagram, Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The BS Sisters">
+  <meta property="og:title" content="The BS Sisters — Salon de Coiffure & Beauté, Sidi Bel Abbès">
+  <meta property="og:description"
+    content="Ongles, coiffure, coloration, soins. Réservez votre créneau en un message sur WhatsApp.">
+  <meta property="og:image" content="https://why8t.github.io/bs-sisters-salon/images/hero-main.jpg">
+  <meta property="og:url" content="https://why8t.github.io/bs-sisters-salon/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The BS Sisters — Salon de Coiffure & Beauté">
+  <meta name="twitter:description" content="Ongles, coiffure, coloration, soins. Réservez sur WhatsApp.">
+  <meta name="twitter:image" content="https://why8t.github.io/bs-sisters-salon/images/hero-main.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- ================================================================
+       ANALYTICS — currently OFF.
+       To turn on (free, takes 2 minutes):
+       1. Go to https://analytics.google.com, create a property for your site.
+       2. Copy your Measurement ID (looks like "G-XXXXXXXXXX").
+       3. Uncomment the two lines below and replace G-XXXXXXXXXX with it.
+       4. You'll then see visitor counts at analytics.google.com.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  ================================================================= -->
 </head>
 
 <body>
 
   <div class="grain" aria-hidden="true"></div>
+
+  <!-- Sticky WhatsApp button — always visible, follows scroll -->
+  <a href="https://wa.me/213658085920?text=Bonjour%20The%20BS%20Sisters%2C%20je%20souhaite%20prendre%20rendez-vous"
+    class="sticky-whatsapp" target="_blank" rel="noopener" aria-label="Réserver sur WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+      <path
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.005c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 18.13h-.005a8.2 8.2 0 01-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.185 8.185 0 012.42 5.83c0 4.55-3.7 8.23-8.25 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01a.92.92 0 00-.67.31c-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" />
+    </svg>
+  </a>
 
   <!-- ================= NAV ================= -->
   <header class="site-header" id="siteHeader">
@@ -240,6 +279,10 @@
         <h3>Vous avez été cliente&nbsp;? Racontez-nous.</h3>
         <p class="review-sub">Notez votre expérience et laissez un mot — il sera lu directement par les sœurs, et
           peut-être mis en avant ici même.</p>
+
+        <a class="btn btn-outline review-google"
+          href="https://www.google.com/search?q=The+BS+Sisters+Sidi+Bel+Abb%C3%A8s+avis" target="_blank"
+          rel="noopener">★ Laisser un avis Google</a>
 
         <div class="star-rating" id="starRating" role="radiogroup" aria-label="Votre note sur 5">
           <button type="button" class="star" data-value="1" role="radio" aria-checked="false"

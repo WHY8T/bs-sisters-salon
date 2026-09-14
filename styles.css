@@ -133,6 +133,37 @@ button {
   transform: translateY(-2px);
 }
 
+/* ---------- sticky WhatsApp button ---------- */
+.sticky-whatsapp {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  z-index: 500;
+  transition: transform .25s var(--ease);
+}
+
+.sticky-whatsapp:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 900px) {
+  .sticky-whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
 /* ---------- header ---------- */
 .site-header {
   position: fixed;
@@ -644,6 +675,10 @@ section:not(.feature):not(.hero):not(.cta-banner):not(.testimonials):not(.galler
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 28px;
+}
+
+.review-google {
+  margin-bottom: 32px;
 }
 
 .star-rating {
