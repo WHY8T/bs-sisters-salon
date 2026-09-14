@@ -1,0 +1,9 @@
+{
+  "name": "bs-sisters-salon",
+  "version": "1.0.0",
+  "description": "The BS Sisters - Salon de coiffure website",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve -l 3000 ."
+  }
+}
